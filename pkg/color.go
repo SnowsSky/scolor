@@ -59,6 +59,6 @@ func DisplayText(color string, text ...string) {
 
 func (c color) DisplayText(text ...string) {
 	for _, word := range text {
-		fmt.Printf("%s%s%s ", Colors[c.Color], word, Reset)
+		fmt.Printf("%s%s%s", Colors[c.Color], word, Reset)
 	}
 }
