@@ -3,8 +3,8 @@ package main
 import scolor "github.com/SnowsSky/scolor/pkg"
 
 func main() {
-	scolor.DisplayText("red", "pls fruit")
-	scolor.DisplayText("red", "ez no\n")
+	scolor.DisplayText("blue", "Welcome")
+	scolor.DisplayText("red", "to scolors\n")
 
-	scolor.Red.DisplayText("dumbasskeh")
+	scolor.White.DisplayText("A simple color printing library")
 }
