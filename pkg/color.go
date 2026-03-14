@@ -30,20 +30,20 @@ var Colors = map[string]string{
 
 var Red = color{"red"}
 var Green = color{"green"}
-var Yellow = color{"green"}
+var Yellow = color{"yellow"}
 var Blue = color{"blue"}
 var Magenta = color{"magenta"}
 var Cyan = color{"cyan"}
 var Gray = color{"gray"}
 var White = color{"white"}
-var BoldRed = color{"Boldred"}
-var BoldGreen = color{"Boldgreen"}
-var BoldYellow = color{"Boldyellow"}
-var BoldBlue = color{"Boldblue"}
-var BoldMagenta = color{"Boldmagenta"}
-var BoldCyan = color{"Boldcyan"}
-var BoldGray = color{"Boldgray"}
-var BoldWhite = color{"Boldwhite"}
+var BoldRed = color{"boldred"}
+var BoldGreen = color{"boldgreen"}
+var BoldYellow = color{"boldyellow"}
+var BoldBlue = color{"boldblue"}
+var BoldMagenta = color{"boldmagenta"}
+var BoldCyan = color{"boldcyan"}
+var BoldGray = color{"boldgray"}
+var BoldWhite = color{"boldwhite"}
 var Reset = "\033[0m"
 
 func DisplayText(color string, text ...string) {
