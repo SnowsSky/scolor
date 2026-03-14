@@ -35,9 +35,9 @@ func main() {
 Run `go get github.com/SnowsSky/scolor`
 
 # Contribute 
-Create a fork of this repo.
-Clone your repo.
-Create a new branch with for example your name : `git switch -c <username>`.
-Make changes.
-Commit & push your changes : `git add . && git commit -m "" && git push`.
-Open a Pull Request.
+Create a fork of this repo.<br>
+Clone your repo.<br>
+Create a new branch with for example your name : `git switch -c <username>`.<br>
+Make changes.<br>
+Commit & push your changes : `git add . && git commit -m "" && git push`.<br>
+Open a Pull Request.<br>
