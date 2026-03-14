@@ -31,10 +31,10 @@ func DisplayText(color string, text string) {
 		panic("Color not found")
 	}
 
-	fmt.Printf("%s%s%s ", Colors[color], text, Reset)
+	fmt.Printf("%s%s%s", Colors[color], text, Reset)
 
 }
 
 func (c color) DisplayText(text string) {
-	fmt.Printf("%s%s%s ", Colors[c.Color], text, Reset)
+	fmt.Printf("%s%s%s", Colors[c.Color], text, Reset)
 }
