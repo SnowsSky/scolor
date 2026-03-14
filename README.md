@@ -28,7 +28,7 @@ func main() {
 ```
 
 # Screenshot
-![example](https://github.com/SnowsSky/scolor/tree/main/screenshots/ss.png)
+![result](https://github.com/SnowsSky/scolor/blob/main/screenshots/ss.png)
 
 
 # Download
