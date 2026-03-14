@@ -46,7 +46,7 @@ var LightGray = color{"lightgray"}
 var LightWhite = color{"lightwhite"}
 var Reset = "\033[0m"
 
-func DisplayText(color string, text string) {
+func DisplayText(color string, text ...string) {
 	color = strings.ToLower(color)
 	if _, ok := Colors[color]; !ok {
 		panic("Color not found")
@@ -56,6 +56,10 @@ func DisplayText(color string, text string) {
 
 }
 
-func (c color) DisplayText(text string) {
+func (c color) DisplayText(text ...string) {
 	fmt.Printf("%s%s%s", Colors[c.Color], text, Reset)
+}
+
+func ColorList() map[string]string {
+	return Colors
 }
