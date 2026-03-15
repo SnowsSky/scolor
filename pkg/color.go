@@ -46,19 +46,19 @@ var BoldGray = color{"boldgray"}
 var BoldWhite = color{"boldwhite"}
 var Reset = "\033[0m"
 
-func DisplayText(color string, text ...string) {
+func DisplayText(color string, args ...any) {
 	color = strings.ToLower(color)
 	if _, ok := Colors[color]; !ok {
 		panic("Color not found")
 	}
-	for _, word := range text {
-		fmt.Printf("%s%s%s", Colors[color], word, Reset)
+	for _, word := range args {
+		fmt.Printf("%s%v%s", Colors[color], word, Reset)
 	}
 
 }
 
-func (c color) DisplayText(text ...string) {
-	for _, word := range text {
-		fmt.Printf("%s%s%s", Colors[c.Color], word, Reset)
+func (c color) DisplayText(args ...any) {
+	for _, word := range args {
+		fmt.Printf("%s%v%s", Colors[c.Color], word, Reset)
 	}
 }
