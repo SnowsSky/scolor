@@ -57,8 +57,25 @@ func DisplayText(color string, args ...any) {
 
 }
 
+func DisplayTextln(color string, args ...any) {
+	color = strings.ToLower(color)
+	if _, ok := Colors[color]; !ok {
+		panic("Color not found")
+	}
+	for _, word := range args {
+		fmt.Printf("%s%v%s", Colors[color], word, Reset)
+	}
+	println()
+}
 func (c color) DisplayText(args ...any) {
 	for _, word := range args {
 		fmt.Printf("%s%v%s", Colors[c.Color], word, Reset)
 	}
+}
+
+func (c color) DisplayTextln(args ...any) {
+	for _, word := range args {
+		fmt.Printf("%s%v%s", Colors[c.Color], word, Reset)
+	}
+	println()
 }
