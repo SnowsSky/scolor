@@ -11,28 +11,18 @@ import (
 )
 
 func main() {
-	// you can print with scolor.DisplayText(color, text); color is a string.
-	scolor.DisplayText("blue", "Welcome ") // Spaces are not done automatically, so make sure you don't forget to.
-	// you can also use capital letters for the color :
-	scolor.DisplayText("RED", "to")                // or scolor.DisplayText("rEd", "to")....
-	scolor.DisplayText("boldyellow", " scolors\n") // Same, '\n' are not done automatically.
+	// Old API:
+	scolor.Cyan.DisplayText("Welcome ") // Does not create a new line
+	scolor.Magenta.DisplayTextln("to ", "scolor!")
 
-	// Or if you want, you can print with scolor.White.DisplayText(text);
-	scolor.White.DisplayText("A simple go color ")
-	// Since scolor 1.1.0, you can now use scolor.White.DisplayTextln() to do "\n" automatically
-	scolor.White.DisplayTextln("printing library.") // or scolor.DisplayTextln("white", "printing library.")
-	// Don't use scolor.Reset.DisplayText(text); Because it will do nothing.
-
-	// Since text is a ...string, you can also do
-	scolor.Magenta.DisplayText("have ", "fun ") // Spaces are not done automatically, so make sure you don't forget to.
-	// Or you can do.
-	scolor.DisplayText("cyan", "with ", "it", ".\n") // Same.
+	// New API:
+	scolor.DisplayText(scolor.BgRed|scolor.FgBoldBlue, "Start printing")
+	scolor.DisplayTextln(scolor.FgYellow, " beautifully!") // Though none of them both are beautiful
 }
-
 ```
 
 # Screenshot
-![result](https://github.com/SnowsSky/scolor/blob/main/screenshots/ss.png)
+![result](https://github.com/SnowsSky/scolor/blob/main/_screenshots/screenshot.png)
 
 
 # Download
@@ -45,3 +35,4 @@ Create a new branch with for example your name : `git switch -c <username>`.<br>
 Make changes.<br>
 Commit & push your changes : `git add . && git commit -m "" && git push`.<br>
 Open a Pull Request.<br>
+
