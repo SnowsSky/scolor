@@ -19,6 +19,8 @@ func main() {
 	scolor.DisplayText(scolor.BgRed|scolor.FgBoldBlue, "Start printing")
 	// You can also choose to don't use a bg
 	scolor.DisplayTextln(scolor.FgYellow, " beautifully!") // Though none of them both are beautiful
+
+	scolor.DisplayTextln(scolor.FgBoldWhite, "scolor@"+scolor.Version) // scolor.Version returns the installed scolor version.
 }
 
 ```

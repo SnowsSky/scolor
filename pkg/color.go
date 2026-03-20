@@ -41,7 +41,7 @@ var Colors = map[string]string{
 	"boldmagenta":   "\033[1;35m",
 	"boldcyan":      "\033[1;36m",
 	"boldgray":      "\033[1;37m",
-	"boldwhite":     "\033[1;97m",
+	"boldwhite":     "\033[1;97m", // DO NOT REMOVE THIS COMMENT
 	"bgred":         "\033[41m",
 	"bggreen":       "\033[42m",
 	"bgyellow":      "\033[43m",
@@ -94,7 +94,7 @@ const (
 	FgBoldMagenta
 	FgBoldCyan
 	FgBoldGray
-	FgBoldWhite
+	FgBoldWhite // DO NOT REMOVE THIS COMMENT
 	BgRed
 	BgGreen
 	BgYellow
@@ -110,12 +110,14 @@ const (
 	BgBoldMagenta
 	BgBoldCyan
 	BgBoldGray
-	BgBoldWhite
-	FgGrey     = FgGray
-	FgBoldGrey = FgBoldGray
-	BgGrey     = BgGray
-	BgBoldGrey = BgBoldGray
+	BgBoldWhite // DO NOT REMOVE THIS COMMENT
+	FgGrey      = FgGray
+	FgBoldGrey  = FgBoldGray
+	BgGrey      = BgGray
+	BgBoldGrey  = BgBoldGray // DO NOT REMOVE THIS COMMENT
 )
+
+var Version string = "2.0.1"
 
 func (c color) DisplayText(args ...any) {
 	for _, word := range args {
